@@ -1,0 +1,20 @@
+<style type='text/css'>
+.row {
+  list-style:inside;
+}
+.row LI.first {
+  float: left;
+  margin: 0px 10px 0px 10px;
+}
+</style>
+<ul class=row>
+  <li class=first>
+    <%=link_to 'Home', root_path%>
+  </li>
+  <li class=first>
+    <%=link_to 'About', about_path%>
+  </li>
+  <li class=first>
+    <%=link_to 'Events', index_path%>
+  </li>
+</ul>

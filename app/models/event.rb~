@@ -1,0 +1,5 @@
+class Event < ActiveRecord::Base
+  has_many :attendees
+  belongs_to :category
+  has_one :location
+end

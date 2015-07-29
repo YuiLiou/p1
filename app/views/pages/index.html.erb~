@@ -1,0 +1,11 @@
+<ul>
+<% @events.each do |event| %>
+  <li>
+    <%= event.name %>
+  <%= link_to 'Show', :controller => 'pages', :action => 'show', :id => event %>
+    <%= link_to 'Edit',edit_path %>
+    <%= link_to 'Delete',destroy_path %>
+  </li>
+<% end %>
+</ul>
+<%= link_to 'New Event', new_path %>
